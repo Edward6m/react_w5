@@ -419,14 +419,14 @@ function App() {
               {...register('tel', {
                 required: '電話 欄位必填',
                 pattern: {
-                  value: /^(0[2-8]\d{7}|09\d{8})$/,
+                  value: /^(0[2|4]\d{8}|0[3|5-8]\d{7}|09\d{8})$/,
                   message: '電話 格式錯誤',
                 },
               })}
               id="tel"
               type="tel"
               className={`form-control ${errors.tel && 'is-invalid'}`}
-              placeholder="請輸入電話,如:0221113333或0912345678"
+              placeholder="請輸入電話, 如:0221113333或031234567或0912345678"
             />
 
             {errors.tel && (
