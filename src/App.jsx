@@ -448,7 +448,7 @@ function App() {
               placeholder="請輸入地址"
             />
 
-            {errors.tel && (
+            {errors.address && (
               <p className="text-danger my-2">{errors.address?.message}</p>
             )}
           </div>
